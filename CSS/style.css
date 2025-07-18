@@ -1,0 +1,35 @@
+.parallax {
+  background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1470&q=80');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.btn-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.card-hover {
+  transition: transform 0.6s cubic-bezier(0.4,0,0.2,1), box-shadow 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Efecto de escala y sombra al pasar el mouse sobre imágenes */
+.img-hover:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 12px 32px rgba(59,130,246,0.15);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1), box-shadow 0.4s cubic-bezier(.4,0,.2,1);
+  z-index: 10;
+  }
+
+.card-hover:hover {
+  background-color: #bdbdbd5d;
+  transition: background 0.3s;
+}

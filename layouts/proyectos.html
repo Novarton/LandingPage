@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyectos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script type="module" src="../JS/script.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <!-- Encabezado -->
+  <header id="main-header" class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft dark:text-white">Empresa Ejemplo</h1>
+      <nav class="space-x-4 flex items-center">
+        <a href="../index.html" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
+        <a href="./catalogo.html" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Catálogo</a>
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 transition-all duration-300 rounded px-3 py-2 font-semibold">
+            Más
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-300 z-50">
+            <a href="./servicios.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 transition">Servicios</a>
+            <a href="./proyectos.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 transition">Proyectos</a>
+            <a href="./nosotros.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 transition">Nosotros</a>
+          </div>
+        </div>
+        <a href="#contacto" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-blue-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto py-12 px-4">
+    <h2 class="text-3xl font-semibold mb-10 text-center animate__animated animate__fadeInDown animate__slow dark:text-blue-200">Casos de Éxito</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Proyecto 1 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp card-hover">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+             alt="Proyecto Energía Solar"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-700 dark:text-blue-300">Instalación de Paneles Solares</h3>
+          <p class="text-gray-700 dark:text-gray-200 mb-4">
+            Proyecto residencial en el que se instalaron paneles solares de alta eficiencia, logrando reducir el consumo eléctrico en un 60%. El cliente ahora disfruta de energía limpia y ahorros significativos.
+          </p>
+          <span class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full text-xs font-semibold">Energía Renovable</span>
+        </div>
+      </div>
+      <!-- Proyecto 2 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp card-hover animate__delay-1s">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80"
+             alt="Proyecto Domótica"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-green-700 dark:text-green-300">Automatización de Oficinas</h3>
+          <p class="text-gray-700 dark:text-gray-200 mb-4">
+            Implementación de sistemas inteligentes para control de iluminación, climatización y seguridad en oficinas corporativas. Mayor eficiencia y confort para los usuarios.
+          </p>
+          <span class="inline-block bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs font-semibold">Domótica</span>
+        </div>
+      </div>
+      <!-- Proyecto 3 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp card-hover animate__delay-2s">
+        <img src="https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=600&q=80"
+             alt="Proyecto Industrial"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-yellow-700 dark:text-yellow-300">Optimización Industrial</h3>
+          <p class="text-gray-700 dark:text-gray-200 mb-4">
+            Modernización de sistemas eléctricos y automatización de procesos en planta industrial, incrementando la productividad y reduciendo tiempos de inactividad.
+          </p>
+          <span class="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-200 px-3 py-1 rounded-full text-xs font-semibold">Industria</span>
+        </div>
+      </div>
+      <!-- Proyecto 4 -->
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp card-hover animate__delay-3s">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+             alt="Proyecto Capacitación"
+             class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-purple-700 dark:text-purple-300">Capacitación Empresarial</h3>
+          <p class="text-gray-700 dark:text-gray-200 mb-4">
+            Talleres y cursos de capacitación para empresas sobre el uso eficiente de la energía y nuevas tecnologías, mejorando la cultura organizacional y el desempeño del personal.
+          </p>
+          <span class="inline-block bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-200 px-3 py-1 rounded-full text-xs font-semibold">Capacitación</span>
+        </div>
+      </div>
+    </div>
+  </main>

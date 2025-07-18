@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script type="module" src="../JS/script.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Encabezado -->
+  <header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Empresa Ejemplo</h1>
+      <nav class="space-x-4 flex items-center">
+        <a href="../index.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
+        <a href="./catalogo.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Catálogo</a>
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1 hover:bg-blue-100 hover:text-blue-800 transition-all duration-300 rounded px-3 py-2 font-semibold">
+            Más
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-300 z-50">
+            <a href="./servicios.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Servicios</a>
+            <a href="./proyectos.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Proyectos</a>
+            <a href="./nosotros.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Nosotros</a>
+          </div>
+        </div>
+        <a href="#contacto" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto py-12 px-4">
+    <section class="mb-16">
+      <h2 class="text-3xl font-semibold mb-6 animate__animated animate__fadeInDown animate__slow">Soluciones Integrales en Energía</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80"
+             alt="Energía renovable"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft animate__slow"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight animate__slow">
+          Ofrecemos servicios de consultoría, instalación y mantenimiento de sistemas de energía renovable. Nuestro equipo está capacitado para diseñar soluciones a la medida, optimizando el consumo energético y reduciendo el impacto ambiental. <br><br>
+          <span class="font-semibold text-blue-700">¿Por qué elegirnos?</span> Porque combinamos tecnología de punta con atención personalizada, garantizando resultados eficientes y sostenibles.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__fadeInDown animate__delay-1s">Automatización y Domótica</h2>
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+             alt="Domótica"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInRight animate__slow"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInLeft animate__slow">
+          Implementamos sistemas inteligentes para hogares y empresas, permitiendo el control remoto de iluminación, climatización, seguridad y más. <br><br>
+          <span class="font-semibold text-green-700">Ventajas:</span> Mayor comodidad, ahorro energético y seguridad avanzada, todo desde tu dispositivo móvil.
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__fadeInDown animate__delay-2s">Mantenimiento Preventivo y Correctivo</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+             alt="Mantenimiento"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft animate__slow"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight animate__slow">
+          Nuestro servicio de mantenimiento asegura el funcionamiento óptimo de tus sistemas eléctricos y electrónicos. Realizamos diagnósticos, reparaciones y actualizaciones para evitar fallas y prolongar la vida útil de tus equipos.<br><br>
+          <span class="font-semibold text-yellow-700">¡Confía en profesionales!</span> Respuesta rápida y soluciones efectivas.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__fadeInDown animate__delay-3s">Asesoría y Capacitación</h2>
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+             alt="Capacitación"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInRight animate__slow"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInLeft animate__slow">
+          Brindamos asesoría técnica y capacitaciones personalizadas para empresas y particulares. Aprende a sacar el máximo provecho de tus sistemas y mantente actualizado con las últimas tendencias tecnológicas.<br><br>
+          <span class="font-semibold text-purple-700">¡Invierte en conocimiento!</span> Cursos presenciales y en línea.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-gray-600">&copy; 2023 Nuestros Servicios. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

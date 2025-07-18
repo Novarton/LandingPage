@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script type="module" src="../JS/script.js"></script>
+
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Encabezado -->
+  <header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Empresa Ejemplo</h1>
+      <nav class="space-x-4 flex items-center">
+        <a href="../index.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
+        <a href="./catalogo.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Catálogo</a>
+        <div class="relative group">
+          <button class="nav-link flex items-center gap-1 hover:bg-blue-100 hover:text-blue-800 transition-all duration-300 rounded px-3 py-2 font-semibold">
+            Más
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-300 z-50">
+            <a href="./servicios.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Servicios</a>
+            <a href="./proyectos.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Proyectos</a>
+            <a href="./nosotros.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Nosotros</a>
+          </div>
+        </div>
+        <a href="#contacto" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto py-12 px-4">
+    <section class="mb-16 card-hover rounded-xl p-4 transition">
+      <h2 class="text-3xl font-semibold mb-6 animate__animated animate__zoomIn">¿Quiénes somos?</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+             alt="Historia"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft img-hover"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight">
+          Somos una empresa apasionada por la innovación y el desarrollo sostenible. Desde nuestros inicios, hemos apostado por la excelencia y la mejora continua, logrando posicionarnos como referentes en el sector.<br><br>
+          <span class="font-semibold text-blue-700">¡Conócenos y descubre cómo podemos ayudarte a transformar tu entorno!</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-16 card-hover rounded-xl p-4 transition">
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__lightSpeedInLeft animate__delay-1s">Nuestro Equipo</h2>
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+             alt="Equipo"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInUp img-hover"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInDown">
+          Nuestro equipo está formado por profesionales creativos y comprometidos, que disfrutan de los retos y buscan siempre superar las expectativas. <br><br>
+          <span class="font-semibold text-green-700">¡La colaboración y el aprendizaje constante nos definen!</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="mb-16 card-hover rounded-xl p-4 transition">
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__bounceIn animate__delay-2s">Nuestra Filosofía</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80"
+             alt="Filosofía"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft img-hover"/>
+        <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight">
+          Creemos en el poder de la tecnología para mejorar la vida de las personas y el entorno. Nuestra filosofía se basa en la responsabilidad, la ética y el respeto por el medio ambiente.<br><br>
+          <span class="font-semibold text-yellow-700">¡Crecemos contigo y para ti!</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="card-hover rounded-xl p-4 transition">
+      <h2 class="text-2xl font-semibold mb-6 animate__animated animate__fadeIn animate__delay-3s">Valores que nos guían</h2>
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <img src="https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=600&q=80"
+             alt="Valores"
+             class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__jackInTheBox img-hover"/>
+        <ul class="list-disc pl-6 text-lg md:w-1/2 animate__animated animate__fadeInLeft">
+          <li class="hover:text-blue-600 transition-colors duration-300"><span class="font-semibold">Innovación:</span> Siempre buscamos nuevas ideas y soluciones.</li>
+          <li class="hover:text-green-600 transition-colors duration-300"><span class="font-semibold">Responsabilidad:</span> Cumplimos nuestros compromisos con ética y transparencia.</li>
+          <li class="hover:text-yellow-600 transition-colors duration-300"><span class="font-semibold">Sostenibilidad:</span> Promovemos el uso eficiente de los recursos.</li>
+          <li class="hover:text-purple-600 transition-colors duration-300"><span class="font-semibold">Trabajo en equipo:</span> Crecemos juntos, compartiendo conocimientos y experiencias.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white text-center py-4 mt-12 shadow-inner">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="text-sm text-gray-500">&copy; 2023 Nuestra Empresa. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

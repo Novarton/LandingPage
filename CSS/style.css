@@ -1,5 +1,5 @@
 .parallax {
-  background-image: url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1470&q=80');
+  background-image: url('../IMG/image.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 .card-hover:hover {
   transform: translateY(-8px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(41, 41, 41, 0.1);
 }
 
 .btn-hover:hover {

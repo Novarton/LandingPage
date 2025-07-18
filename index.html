@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Idea</title>
+  <link rel="icon" href="./IMG/Logo.jpeg" type="image/jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.3/dist/tailwind.min.css" rel="stylesheet"/>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -14,7 +15,7 @@
   <!-- Encabezado -->
   <header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-500">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Empresa Ejemplo</h1>
+      <img src="./IMG/Logo.jpeg" alt="Logo" class="h-12 w-auto text-2xl font-bold animate__animated animate__fadeInLeft" />
       <nav class="space-x-4 flex items-center">
         <a href="#inicio" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
         <a href="#seccion1" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Sobre Nosotros</a>
@@ -38,10 +39,10 @@
   </header>
 
   <!-- Seccion de Inicio con Parallax -->
-  <section id="inicio" class="h-screen flex items-center justify-center text-white parallax">
-    <div class="bg-black bg-opacity-60 p-10 rounded animate__animated animate__fadeIn">
-      <h2 class="text-4xl font-bold mb-4">Bienvenido a Nuestro Sitio</h2>
-      <p class="text-lg">Soluciones innovadoras para energía y tecnología.</p>
+  <section id="inicio" class="h-screen flex items-center justify-center text-black parallax">
+    <div class="bg-white bg-opacity-70 text-center p-10 rounded animate__animated animate__fadeIn">
+      <h2 class="text-4xl font-bold mb-4">DAREY</h2>
+      <p class="text-lg">Control de acceso.</p>
     </div>
   </section>
 
@@ -49,15 +50,19 @@
   <section id="seccion1" class="py-16 bg-white">
     <div class="flex flex-col md:flex-row items-center">
       <!-- Imagen: animación lateral izquierda -->
-      <div class="md:w-1/2 h-80 bg-cover bg-center scroll-animate-img animate__animated" style="background-image: url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80');">
+      <div class="md:w-1/2 h-80 bg-cover bg-center scroll-animate-img animate__animated" style="background-image: url('./IMG/acceso.jpg');">
       </div>
       <!-- Texto: animación vertical -->
       <div class="md:w-1/2 px-6 scroll-animate">
         <div class="bg-white bg-opacity-80 p-6 rounded shadow-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-blue-700">Nuestra Experiencia</h2>
+          <h2 class="text-3xl font-semibold mb-4 text-blue-700">¡Se acabaron las filas!</h2>
           <p>
-            Con años de experiencia en soluciones descentralizadas de energía, nuestra empresa ofrece 
-            calidad, compromiso y tecnología de punta para satisfacer las necesidades de nuestros clientes.
+            Desde su smartphone, a
+            través de la APP, el residente puede enviar pases de
+            acceso a sus visitantes.
+            El acceso se vuelve
+            completamente automatizado, rápido, cómodo y
+            seguro.
           </p>
         </div>
       </div>
@@ -70,14 +75,17 @@
       <!-- Texto: animación vertical -->
       <div class="md:w-1/2 order-2 md:order-1 px-6 scroll-animate">
         <div class="bg-white bg-opacity-80 p-6 rounded shadow-lg">
-          <h2 class="text-3xl font-semibold mb-4 text-green-700">Compromiso Ambiental</h2>
+          <h2 class="text-3xl font-semibold mb-4 text-green-700">Protocolo de acceso de visitantes</h2>
           <p>
-            Nos enfocamos en proyectos sustentables que reducen el impacto ambiental y promueven el uso eficiente de los recursos naturales.
+            A través de la APP, cada residente puede dar de alta
+            visitantes con autorización de ingreso a su complejo
+            residencial, ya sea por tiempo definido o indefinido;
+            además, puede registrar pre-autorizaciones de acceso.
           </p>
         </div>
       </div>
       <!-- Imagen: animación lateral derecha -->
-      <div class="md:w-1/2 h-80 bg-cover bg-center order-1 md:order-2 scroll-animate-img-right animate__animated" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');">
+      <div class="md:w-1/2 h-80 bg-cover bg-center order-1 md:order-2 scroll-animate-img-right animate__animated" style="background-image: url('./IMG/tablet.jpg');">
       </div>
     </div>
   </section>
@@ -89,11 +97,11 @@
       <div class="flex flex-col md:flex-row items-center gap-8">
         <!-- Producto de muestra -->
         <div class="bg-gray-50 shadow-lg rounded-xl p-6 text-center animate__animated card-hover scroll-animate md:w-1/2">
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+          <img src="./IMG/Llaveros Faro.jpg"
             alt="Producto de Muestra"
             class="mx-auto mb-4 rounded-lg shadow-md object-cover w-full h-48 max-w-xs" />
-          <h3 class="text-xl font-bold">Producto de Muestra</h3>
-          <p class="text-gray-600">Descripción breve del producto destacado.</p>
+          <h3 class="text-xl font-bold">Tag Personalizado</h3>
+          <p class="text-gray-600">Cambia tu tag aburrido.</p>
           <a href="https://wa.me/5210000000000" class="inline-block mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 btn-hover">Pedir por WhatsApp</a>
         </div>
         <!-- Descripción lateral y botón -->

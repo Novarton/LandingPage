@@ -7,7 +7,6 @@
 }
 
 .card-hover:hover {
-  transform: translateY(-8px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 10px 25px rgba(41, 41, 41, 0.1);
 }

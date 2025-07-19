@@ -7,33 +7,31 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  
   <link rel="stylesheet" href="../CSS/style.css">
   <script type="module" src="../JS/script.js"></script>
-
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
   <!-- Encabezado -->
-  <header id="main-header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-500">
+  <header id="main-header" class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-all duration-500">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold animate__animated animate__fadeInLeft">Empresa Ejemplo</h1>
+      <img src="../IMG/Logo.jpeg" alt="Logo" class="h-12 w-auto rounded-full text-2xl font-bold animate__animated animate__fadeInLeft dark:none" />
       <nav class="space-x-4 flex items-center">
-        <a href="../index.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
-        <a href="./catalogo.html" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Catálogo</a>
+        <a href="../index.html" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Inicio</a>
+        <a href="./catalogo.html" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Catálogo</a>
         <div class="relative group">
-          <button class="nav-link flex items-center gap-1 hover:bg-blue-100 hover:text-blue-800 transition-all duration-300 rounded px-3 py-2 font-semibold">
+          <button class="nav-link flex items-center gap-1 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white transition-all duration-300 rounded px-3 py-2 font-semibold">
             Más
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div class="absolute left-0 mt-2 w-48 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-300 z-50">
-            <a href="./servicios.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Servicios</a>
-            <a href="./proyectos.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Proyectos</a>
-            <a href="./nosotros.html" class="block px-4 py-2 text-blue-600 hover:bg-blue-100 hover:text-blue-800 transition">Nosotros</a>
+          <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transform -translate-y-2 transition-all duration-300 z-50">
+            <a href="./servicios.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white transition">Servicios</a>
+            <a href="./proyectos.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white transition">Proyectos</a>
+            <a href="./nosotros.html" class="block px-4 py-2 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white transition">Nosotros</a>
           </div>
         </div>
-        <a href="#contacto" class="nav-link text-blue-600 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 hover:text-blue-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Contacto</a>
+        <a href="#contacto" class="nav-link text-blue-600 dark:text-blue-300 font-semibold px-3 py-2 rounded transition-all duration-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-800 dark:hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400">Contacto</a>
       </nav>
     </div>
   </header>
@@ -47,7 +45,7 @@
              class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft animate__slow"/>
         <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight animate__slow">
           Ofrecemos servicios de consultoría, instalación y mantenimiento de sistemas de energía renovable. Nuestro equipo está capacitado para diseñar soluciones a la medida, optimizando el consumo energético y reduciendo el impacto ambiental. <br><br>
-          <span class="font-semibold text-blue-700">¿Por qué elegirnos?</span> Porque combinamos tecnología de punta con atención personalizada, garantizando resultados eficientes y sostenibles.
+          <span class="font-semibold text-blue-700 dark:text-blue-300">¿Por qué elegirnos?</span> Porque combinamos tecnología de punta con atención personalizada, garantizando resultados eficientes y sostenibles.
         </p>
       </div>
     </section>
@@ -60,7 +58,7 @@
              class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInRight animate__slow"/>
         <p class="text-lg md:w-1/2 animate__animated animate__fadeInLeft animate__slow">
           Implementamos sistemas inteligentes para hogares y empresas, permitiendo el control remoto de iluminación, climatización, seguridad y más. <br><br>
-          <span class="font-semibold text-green-700">Ventajas:</span> Mayor comodidad, ahorro energético y seguridad avanzada, todo desde tu dispositivo móvil.
+          <span class="font-semibold text-green-700 dark:text-green-300">Ventajas:</span> Mayor comodidad, ahorro energético y seguridad avanzada, todo desde tu dispositivo móvil.
         </p>
       </div>
     </section>
@@ -73,7 +71,7 @@
              class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInLeft animate__slow"/>
         <p class="text-lg md:w-1/2 animate__animated animate__fadeInRight animate__slow">
           Nuestro servicio de mantenimiento asegura el funcionamiento óptimo de tus sistemas eléctricos y electrónicos. Realizamos diagnósticos, reparaciones y actualizaciones para evitar fallas y prolongar la vida útil de tus equipos.<br><br>
-          <span class="font-semibold text-yellow-700">¡Confía en profesionales!</span> Respuesta rápida y soluciones efectivas.
+          <span class="font-semibold text-yellow-700 dark:text-yellow-300">¡Confía en profesionales!</span> Respuesta rápida y soluciones efectivas.
         </p>
       </div>
     </section>
@@ -86,16 +84,15 @@
              class="rounded-lg shadow-lg w-full md:w-1/2 animate__animated animate__fadeInRight animate__slow"/>
         <p class="text-lg md:w-1/2 animate__animated animate__fadeInLeft animate__slow">
           Brindamos asesoría técnica y capacitaciones personalizadas para empresas y particulares. Aprende a sacar el máximo provecho de tus sistemas y mantente actualizado con las últimas tendencias tecnológicas.<br><br>
-          <span class="font-semibold text-purple-700">¡Invierte en conocimiento!</span> Cursos presenciales y en línea.
+          <span class="font-semibold text-purple-700 dark:text-purple-300">¡Invierte en conocimiento!</span> Cursos presenciales y en línea.
         </p>
       </div>
     </section>
   </main>
 
-  <footer class="bg-white py-8 mt-16">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <p class="text-gray-600">&copy; 2023 Nuestros Servicios. Todos los derechos reservados.</p>
-    </div>
+  <!-- Pie de página -->
+  <footer class="bg-gray-800 dark:bg-gray-900 text-white text-center py-4">
+    <p>&copy; 2025 DAREY. Empresa de administración inmobiliaria Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
